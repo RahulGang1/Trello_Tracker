@@ -1,0 +1,129 @@
+/* General container styling */
+.container-m {
+  background-image: url('https://wallpapercave.com/wp/wp3998746.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e5ddd5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+/* App title styling */
+.app-title {
+  text-align: center;
+  color: #075e54;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.message-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.name-input,
+.message-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.message-button {
+  padding: 10px;
+  background-color: #253fd3;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.message-button:hover {
+  background-color: #20c357;
+}
+
+/* Message list styling */
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message-item {
+  display: flex;
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message-left {
+  align-self: flex-start;
+  background-color: #ffffff;
+}
+
+.message-right {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-name {
+  color: #075e54;
+  margin-bottom: 5px;
+}
+
+.message-text {
+  color: #303030;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  .message-form {
+    gap: 5px;
+  }
+
+  .name-input,
+  .message-input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .message-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .message-item {
+    max-width: 100%;
+  }
+}

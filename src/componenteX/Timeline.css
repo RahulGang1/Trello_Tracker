@@ -1,0 +1,137 @@
+/* App.css */
+.timesheet-app {
+  /* max-width: 1100px; */
+  margin: 0 auto;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-image: url('https://i.pinimg.com/originals/01/fb/a3/01fba3da34283bfbb626ad5372902d79.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.addrow{
+  background-color: blue;
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+  color: white;
+}
+
+.week-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.week-selector button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0 12px;
+}
+
+.week-selector span {
+  font-size: 1.3em;
+  margin: 0 15px;
+}
+
+.timesheet-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #b1f5fe;
+}
+
+.no-entries {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.clock-icon {
+  font-size: 3em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.inputTime {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-row {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #ac4caf;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.add-row:hover {
+  background-color: #d208ad;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .timesheet-container {
+    overflow-x: scroll;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .week-selector span {
+    font-size: 1em;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+
+  input[type="text"], input[type="number"] {
+    padding: 4px;
+  }
+}

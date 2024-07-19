@@ -1,0 +1,164 @@
+/* Dashboard.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.project-overview {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mainD-img {
+  height: 20vw;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.header {
+  text-align: center;
+}
+
+.dash-h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.summary {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.mainD-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.dash-div {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px;
+  flex: 1;
+  min-width: 150px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.dash-div:hover {
+  transform: translateY(-10px);
+  background-color: #e0e0e0;
+}
+
+.dash-h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.dash-h4 {
+  margin: 5px 0 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project-progress {
+  margin: 20px 0;
+}
+
+.progress-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.progress-item span {
+  flex: 1;
+  font-size: 1rem;
+  color: #666;
+}
+
+.progress-bar {
+  flex: 4;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #4caf50;
+}
+
+.team-section {
+  margin: 20px 0;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  margin: 10px;
+}
+
+.team-member img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.dash-imgbox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.dash-img {
+  height: 200px;
+  width: auto;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .mainD-box,
+  .dash-imgbox,
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dash-div,
+  .dash-img,
+  .team-member {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
