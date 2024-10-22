@@ -1,6 +1,6 @@
 
 import React from 'react'
-import Addrout from './componenteX/Addrout'
+import Addrout from './component/Addrout'
 
 function App() {
   return (
